@@ -18,6 +18,7 @@
 		<li>5</li>
 	</ul>		
 </div> */}
+
 function Banner() {
     this.show = function (conf) {
         var cfg = {
@@ -105,7 +106,7 @@ function Banner() {
             Move = true;
             index++;
             navAutoMove();
-            move($slider, { left: -1200 * index }, function () {
+            move($slider, { left: -1200 * index }, function () {//每张照片宽度1200px
                 if (index == 6) {//当index走到b5时回到b1
                     $slider.style.left = -1200 + 'px';
                     index = 1;
